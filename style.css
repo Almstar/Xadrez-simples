@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+#board {
+  width: 480px;
+  height: 480px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border: 3px solid #333;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.dark {
+  background: #444;
+  color: white;
+}
+
+.light {
+  background: #eee;
+}
+
+.highlight {
+  outline: 3px solid gold;
+}
+
+.info {
+  margin-top: 10px;
+  color: #333;
+}
